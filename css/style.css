@@ -723,7 +723,7 @@ textarea {
     display: grid;
     grid-template-columns: minmax(240px, 0.8fr) 1.2fr;
     gap: 48px;
-    align-items: center;
+    align-items: start;
 }
 
 .profile-image-placeholder {
@@ -734,6 +734,87 @@ textarea {
     border-radius: var(--radius-card);
     background-color: var(--color-surface);
     color: var(--color-text-muted);
+}
+
+.profile-text {
+    display: grid;
+    gap: 36px;
+    min-width: 0;
+}
+
+.about-intro {
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.about-eyebrow {
+    margin: 0 0 14px;
+    color: var(--color-accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+}
+
+.about-intro-title {
+    margin: 0;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+}
+
+.about-intro-description {
+    margin: 20px 0 0;
+    color: var(--color-text-muted);
+    line-height: 2;
+}
+
+.about-block {
+    display: grid;
+    gap: 18px;
+}
+
+.about-block-title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.about-history {
+    display: grid;
+    gap: 24px;
+}
+
+.about-history-item {
+    display: grid;
+    grid-template-columns: 140px minmax(0, 1fr);
+    gap: 16px;
+}
+
+.about-period {
+    margin: 2px 0 0;
+    color: var(--color-accent);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+.about-history-content h4 {
+    margin: 0;
+    font-size: 0.9375rem;
+    font-weight: 700;
+}
+
+.about-history-content p,
+.about-block-description {
+    margin: 8px 0 0;
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+    line-height: 1.9;
+}
+
+.about-block-description+.about-block-description {
+    margin-top: -4px;
 }
 
 /* ========================================
@@ -860,11 +941,36 @@ textarea {
 
     .about-content {
         grid-template-columns: 1fr;
-        gap: 24px;
+        gap: 32px;
     }
 
     .profile-image-placeholder {
         min-height: 280px;
+    }
+
+    .profile-text {
+        gap: 32px;
+    }
+
+    .about-intro {
+        padding-bottom: 28px;
+    }
+
+    .about-history {
+        gap: 22px;
+    }
+
+    .about-history-item {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .about-period {
+        margin: 0;
+    }
+
+    .about-intro-title {
+        font-size: 1.5rem;
     }
 
     .footer-inner {
