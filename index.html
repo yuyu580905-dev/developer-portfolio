@@ -130,21 +130,151 @@
                 </div>
 
                 <article class="work-card">
-                    <div class="work-image-placeholder">
-                        <span>RepairFlow</span>
-                    </div>
-
+                    <!-- Project Overview -->
                     <div class="work-content">
                         <p class="work-category">MAIN PROJECT</p>
                         <h3 class="work-title">RepairFlow</h3>
-                        <p class="work-description">
-                            修理依頼から担当者の割り当て、対応履歴の管理までを
-                            一元化する修理管理アプリケーション。
+                        <p class="work-subtitle">
+                            修理依頼・進捗管理システム
                         </p>
-                        <a class="text-link" href="https://repairflow-app.onrender.com/login" target="_blank"
-                            rel="noopener noreferrer">
-                            アプリを確認する
-                        </a>
+                        <p class="work-description">
+                            修理依頼の受付から担当者の割り当て、
+                            対応履歴の管理までを一元化するWebアプリケーション。
+                            依頼者・技術者・管理者の役割に応じた機能を備え、
+                            修理業務の流れを効率的に管理できる仕組みを構築しました。
+                        </p>
+
+                        <div class="work-links">
+                            <a class="button button-primary" href="https://repairflow-app.onrender.com/login" target="_blank"
+                                rel="noopener noreferrer">
+                                デモサイトを見る
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                            <a class="button button-secondary" href="https://github.com/yuyu580905-dev/RepairFlow-app"
+                                target="_blank" rel="noopener noreferrer">
+                                GitHubを見る
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Main Screenshot -->
+                    <div class="work-main-image">
+                        <figure class="work-figure">
+                            <img src="images/works/repairflow/admin-dashboard.png" alt="RepairFlowの管理者向けダッシュボード画面" width="2940"
+                                height="1380" loading="lazy">
+                            <figcaption>
+                                管理者ダッシュボード
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <!-- Screenshot Gallery -->
+                    <div class="work-gallery-section">
+                        <h4 class="work-section-title">Application Screens</h4>
+                        <p class="work-section-description">
+                            役割に応じた画面と、修理業務を支える管理機能。
+                        </p>
+
+                        <div class="work-gallery">
+                            <figure class="work-figure">
+                                <img src="images/works/repairflow/requester-dashboard.png" alt="RepairFlowの依頼者向けダッシュボード画面"
+                                    width="2940" height="1378" loading="lazy">
+                                <figcaption>
+                                    依頼者ダッシュボード
+                                </figcaption>
+                            </figure>
+
+                            <figure class="work-figure">
+                                <img src="images/works/repairflow/repair-request-details.png" alt="修理依頼の詳細と対応履歴を表示する画面"
+                                    width="2896" height="1430" loading="lazy">
+                                <figcaption>
+                                    修理依頼詳細・対応履歴
+                                </figcaption>
+                            </figure>
+
+                            <figure class="work-figure">
+                                <img src="images/works/repairflow/user-create.png" alt="管理者によるユーザー登録画面" width="2892"
+                                    height="1432" loading="lazy">
+                                <figcaption>
+                                    ユーザー登録
+                                </figcaption>
+                            </figure>
+
+                            <figure class="work-figure">
+                                <img src="images/works/repairflow/user-edit.png" alt="管理者によるユーザー編集画面" width="2898" height="1416"
+                                    loading="lazy">
+                                <figcaption>
+                                    ユーザー編集
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!-- Project Details -->
+                    <div class="work-details">
+                        <section class="work-detail-block">
+                            <h4 class="work-section-title">Overview</h4>
+                            <p>
+                                修理依頼の受付・担当者の割り当て・進捗管理・対応履歴を
+                                一元管理することを目的に開発。
+                                利用者ごとの権限と業務ルールを整理し、
+                                安全性と保守性を意識した設計を行いました。
+                            </p>
+                        </section>
+
+                        <section class="work-detail-block">
+                            <h4 class="work-section-title">Key Features</h4>
+                            <ul class="work-feature-list">
+                                <li>
+                                    <strong>依頼者：</strong>
+                                    修理依頼の登録、進捗確認、キャンセル申請
+                                </li>
+                                <li>
+                                    <strong>技術者：</strong>
+                                    担当依頼の確認、対応状況の更新、作業履歴の記録
+                                </li>
+                                <li>
+                                    <strong>管理者：</strong>
+                                    ユーザー管理、担当者の割り当て、キャンセル申請の審査
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="work-detail-block">
+                            <h4 class="work-section-title">Technical Highlights</h4>
+                            <ul class="work-feature-list">
+                                <li>
+                                    <strong>権限管理：</strong>
+                                    Policyを利用し、役割や所有者に応じたアクセス制御を実装
+                                </li>
+                                <li>
+                                    <strong>入力検証：</strong>
+                                    FormRequestでバリデーションと認可の責務を整理
+                                </li>
+                                <li>
+                                    <strong>データ整合性：</strong>
+                                    トランザクションと行ロックを利用した更新処理を実装
+                                </li>
+                                <li>
+                                    <strong>品質管理：</strong>
+                                    Feature Testによる業務ルールや権限制御の動作確認
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="work-detail-block">
+                            <h4 class="work-section-title">Tech Stack</h4>
+                            <ul class="work-tech-list">
+                                <li>PHP 8.3</li>
+                                <li>Laravel 10</li>
+                                <li>MySQL 8.4</li>
+                                <li>Tailwind CSS 3</li>
+                                <li>JavaScript</li>
+                                <li>Docker / Laravel Sail</li>
+                                <li>Render</li>
+                            </ul>
+                        </section>
                     </div>
                 </article>
             </div>
