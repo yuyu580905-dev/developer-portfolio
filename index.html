@@ -36,7 +36,13 @@
                 PORTFOLIO<span>.</span>
             </a>
 
-            <nav class="global-nav" aria-label="メインナビゲーション">
+            <button class="menu-toggle" type="button" aria-controls="global-nav" aria-expanded="false" aria-label="メニューを開く">
+                <span class="menu-toggle-line" aria-hidden="true"></span>
+                <span class="menu-toggle-line" aria-hidden="true"></span>
+                <span class="menu-toggle-line" aria-hidden="true"></span>
+            </button>
+
+            <nav class="global-nav" id="global-nav" aria-label="メインナビゲーション">
                 <ul class="nav-list">
                     <li><a href="#works">WORKS</a></li>
                     <li><a href="#skills">SKILLS</a></li>
@@ -183,7 +189,7 @@
                         <div class="work-gallery">
                             <figure class="work-figure">
                                 <img src="images/works/repairflow/requester-dashboard.png" alt="RepairFlowの依頼者向けダッシュボード画面"
-                                    width="2940" height="1378" loading="lazy">
+                                    width="2940" height="1428" loading="lazy">
                                 <figcaption>
                                     依頼者ダッシュボード
                                 </figcaption>
