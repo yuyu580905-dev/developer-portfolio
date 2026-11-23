@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yuyu580905-dev.github.io/developer-portfolio/sitemap.xml
