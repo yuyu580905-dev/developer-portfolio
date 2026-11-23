@@ -550,6 +550,58 @@ textarea {
     transform: translate(2px, -2px);
 }
 
+/* Demo login information */
+
+.demo-login {
+    max-width: 640px;
+    margin-top: 28px;
+    padding: 24px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    background-color: var(--color-bg);
+}
+
+.demo-login-title {
+    margin: 0 0 18px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.demo-login-list {
+    display: grid;
+    gap: 14px;
+    margin: 0;
+}
+
+.demo-login-item {
+    display: grid;
+    gap: 6px;
+}
+
+.demo-login-item dt {
+    color: var(--color-text-muted);
+    font-size: 0.8125rem;
+    font-weight: 600;
+}
+
+.demo-login-item dd {
+    margin: 0;
+    padding: 10px 12px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-button);
+    background-color: var(--color-surface);
+    color: var(--color-text);
+    font-size: 0.9375rem;
+    overflow-wrap: anywhere;
+}
+
+.demo-login-note {
+    margin: 16px 0 0;
+    color: var(--color-text-muted);
+    font-size: 0.8125rem;
+    line-height: 1.8;
+}
+
 /* Main screenshot */
 
 .work-main-image {
